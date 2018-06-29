@@ -12,14 +12,19 @@ while True:
         
     elif ask == "u":
         position = int(input("Update position: "))
-        update = input("Enter new item: ")
-        items[position-1] = update
-        print("Our items: ", *items, sep= ", ")
-        
+        if position>len(items) or position<-len(items) :
+            print("Out of range")
+        else:
+            update = input("Enter new item: ")
+            items[position-1] = update
+            print("Our items: ", *items, sep= ", ")
     elif ask == "d":
         del_position = int(input("Delete position: "))
-        del items [del_position-1]
-        print("Our items: ", *items, sep= ", ")
+        if del_position>len(items) or del_position<-len(items) :
+            print("Out of range")
+        else:
+            del items [del_position-1]
+            print("Our items: ", *items, sep= ", ")
 
     else: 
         break
