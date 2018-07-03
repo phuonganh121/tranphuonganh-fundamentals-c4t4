@@ -11,14 +11,14 @@
 
 favs = ["deathnote", "netflix", "teaching"]
 print(favs)
-# favs.remove("deathnote")
-# print(favs)
+    # favs.remove("deathnote")
+    # print(favs)
 
-# del favs[0]
-# print(favs)
+    # del favs[0]
+    # print(favs)
 
-favs.pop(0)
-print(favs)
+    # favs.pop(0)
+    # print(favs)
 
 # print(*favs, sep=", ")
 

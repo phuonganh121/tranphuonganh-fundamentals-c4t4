@@ -8,7 +8,7 @@ while True:
     if len(num) == 0:
         break
     
-print(*sorted_num)
+print(sorted_num)
 
 
 
