@@ -90,8 +90,7 @@ while playing:
     
     for box in boxes: 
         player_in_box = player['x'] == box['x'] and player ['y'] == box ['y']
-        box_in_map = 0 <= box['x'] + dx < map['size_x'] and 0 <= box['y'] + dy < map ['size_y']
-        if player_in_box and box_in_map:  
+        if player_in_box:  
             box['x'] += dx
             box['y'] += dy
             
